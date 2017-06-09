@@ -21,12 +21,17 @@ const USERS: Array<User> = [
 })
 export class UsersComponent implements OnInit{
   public users;
+  public selectedUser: User;
   
   public constructor(){
   }
   
   public ngOnInit(){
     this.users = USERS;
+  }
+
+  public onSelect(user: User):void  {
+      this.selectedUser = user;
   }
 
 }

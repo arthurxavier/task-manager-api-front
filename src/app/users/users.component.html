@@ -12,10 +12,18 @@
       <td>{{user.id}}</td>
       <td>{{user.email}}</td>
       <td>
-        <button class="btn btn-info">Detalhes</button>
-        <button class="btn btn-danger">Excluir</button>
+        <button class="btn btn-info" data-toggle="modal" data-target="#userDetailModal" (click)="onSelect(user)">
+          <span class="glyphicon glyphicon-info-sign"></span>
+          Detalhes
+        </button>
+        <button class="btn btn-danger">
+          <span class="glyphicon glyphicon-trash"></span>
+          Excluir
+        </button>
       </td>
     </tr>
 
   </tbody>
 </table>
+
+<user-detail [user]="selectedUser"></user-detail>
