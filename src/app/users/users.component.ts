@@ -1,8 +1,9 @@
 // Declaração OBJETO do component users
-
 import { Component, OnInit } from "@angular/core";
 
-const USERS: Array<any> = [
+import { User } from "./shared/user.model";
+
+const USERS: Array<User> = [
   { id: 1, email: 'test@teste.com'},
   { id: 2, email: 'test1@teste.com'},
   { id: 3, email: 'test2@teste.com'},
