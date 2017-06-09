@@ -1,3 +1,5 @@
+// Declaração OBJETO do component users
+
 import { Component, OnInit } from "@angular/core";
 
 const USERS: Array<any> = [
